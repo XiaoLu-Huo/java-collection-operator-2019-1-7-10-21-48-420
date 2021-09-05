@@ -102,17 +102,17 @@ public class AddTest {
 
     @Test
     public void should_return_whether_include_special_element() {
-        // 求数组中所有偶数组成的数组是否包含某特定的数specialElment
+        // 求数组中所有偶数组成的数组是否包含某特定的数specialElement
         Integer[] array = new Integer[]{1, 2, 3, 4, 5};
         List<Integer> arrayList = Arrays.asList(array);
 
         Add add = new Add();
 
-        Integer existedElment = 3;
-        assertThat(add.isIncludedInEvenIndex(arrayList, existedElment)).isEqualTo(false);
+        Integer existedElement = 3;
+        assertThat(add.isIncludedInEvenIndex(arrayList, existedElement)).isEqualTo(false);
 
-        Integer unexistedElment = 2;
-        assertThat(add.isIncludedInEvenIndex(arrayList, unexistedElment)).isEqualTo(true);
+        Integer unExistedElement = 2;
+        assertThat(add.isIncludedInEvenIndex(arrayList, unExistedElement)).isEqualTo(true);
     }
 
     @Test
