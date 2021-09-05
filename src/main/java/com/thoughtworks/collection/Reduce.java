@@ -60,7 +60,7 @@ public class Reduce {
         if (node1 == null) {
             return Double.valueOf(node);
         } else {
-            return Double.valueOf(node + node1) / 2;
+            return (double) (node + node1) / 2;
         }
     }
 
